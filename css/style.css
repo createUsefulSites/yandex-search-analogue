@@ -1,0 +1,237 @@
+@import url(./reset.css);
+
+@font-face {
+  font-family: "Yandex";
+  src: url("./../fonts/YandexSansText-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Yandex";
+  src: url("./../fonts/YandexSansText-Regular.ttf");
+  font-weight: 400;
+}
+
+/* header */
+
+* {
+  transition: opacity 0.2s linear;
+}
+
+.header {
+  padding: 40px 36px 0 36px;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main__logo {
+  width: 53px;
+  cursor: pointer;
+
+  transition: scale 0.07s linear;
+}
+
+.main__logo:hover {
+  scale: 1.14;
+}
+
+.burger__menu {
+  width: 45px;
+  opacity: 0.2 !important;
+  cursor: pointer;
+
+  transition: opacity 0.1s linear;
+}
+
+.burger__menu:hover {
+  opacity: 0.3 !important;
+}
+
+.header__button {
+  padding: 12px 24px;
+  background-color: rgba(0, 0, 0, 0.07);
+  border-radius: 15px;
+  font-family: "Yandex";
+  font-weight: 500;
+  font-size: 19px;
+  margin-right: 14px;
+
+  transition: background-color 0.1s linear;
+}
+
+.header__button:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* main */
+
+.wrapper {
+  width: calc(100% * 0.555);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+/* badges */
+
+.main__badges {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 60px;
+  margin-bottom: 35px;
+}
+
+.badge__image {
+  border-radius: 22px;
+  border: 0.3px solid rgba(0, 0, 0, 0.12);
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.badge__wrapper:nth-child(1) > .badge__image {
+  background-image: url(./../images/xxGFoFoiOf0.jpg);
+}
+
+.badge__wrapper:nth-child(2) > .badge__image {
+  background-image: url(./../images/ghost.jpg);
+  filter: brightness(2);
+}
+
+.badge__wrapper:nth-child(3) > .badge__image {
+  background-image: url(./../images/ab67616d0000b273f629e1b41d71095d70ec9e1c.webp);
+}
+
+.badge__wrapper:nth-child(4) > .badge__image {
+  background-image: url(./../images/Oppenheimer.jpg);
+  filter: brightness(1.2);
+}
+
+.badge__wrapper:nth-child(5) > .badge__image {
+  background-image: url(./../images/pic.jfif);
+}
+
+.badge__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 9px;
+}
+
+.badge__text {
+  font-family: "Yandex";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* input */
+
+.input__wrapper {
+  width: 100%;
+  height: 65px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.input {
+  border: 2px solid rgba(253, 182, 50, 0.829);
+  width: 100%;
+  height: 100%;
+  border-radius: 19px;
+  padding-left: 20px;
+  font-size: 23px;
+  font-family: "Yandex";
+  font-weight: 400;
+}
+
+.x__icon {
+  display: none;
+  width: 37px;
+  position: absolute;
+  top: 14px;
+  right: 15px;
+  cursor: pointer;
+  opacity: 1 !important;
+
+  transition: opacity 0.2s linear;
+}
+
+.x__icon:hover {
+  opacity: 0.5 !important;
+}
+
+input::placeholder {
+  font-family: "Yandex";
+  font-weight: 400;
+  opacity: 0.4;
+  font-size: 20px;
+}
+
+.x__icon {
+  position: absolute;
+}
+
+/* weather & other things */
+
+.weather__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  margin-bottom: 40px;
+}
+
+.weather__wrapper__left {
+  display: flex;
+  column-gap: 25px;
+  align-items: center;
+}
+
+.weather__info__wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.weather__info__text {
+  font-size: 18px;
+  font-family: "Yandex";
+  font-weight: 400;
+}
+
+.weather__wrapper__right {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.weather__info__city {
+  font-size: 17px;
+  font-family: "Yandex";
+  font-weight: 400;
+  opacity: 0.5 !important;
+}
+
+/* advert */
+
+.advert {
+  width: 98%;
+  margin: 0 auto;
+  height: 180px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 18px;
+
+  background-image: url(https://i.pinimg.com/originals/4e/e2/02/4ee202bcf224961ad9f843a5db8e035f.jpg);
+  background-position: center;
+}
